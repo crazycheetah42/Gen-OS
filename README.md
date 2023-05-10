@@ -6,6 +6,7 @@ To install this on the computer you want to install CrazyDebian on, first downlo
 After Debian is installed, login to your system and type the following commands:
 
 ```
+sudo apt install git -y
 git clone https://github.com/crazycheetah42/CrazyDebian
 cd CrazyDebian
 sudo chmod +x install.sh
