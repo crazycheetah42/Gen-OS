@@ -17,7 +17,9 @@ sudo apt update
 sudo apt install brave-browser-beta -y
 echo "4. Install cursors (Nordzy-cursors)"
 git clone https://github.com/alvatip/Nordzy-cursors
-sudo ./Nordzy-cursors/install.sh
+cd Nordzy-cursors
+sudo ./install.sh
+cd ..
 sudo rm -r /usr/share/icons/default/index.theme
 sudo cp index.theme /usr/share/icons/default/
 echo "5. Install icons (papirus)"
