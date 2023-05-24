@@ -26,3 +26,5 @@ echo "6. Install theme (Nordic-darker-v40)"
 wget https://github.com/EliverLara/Nordic/releases/download/v2.2.0/Nordic-darker-v40.tar.xz
 tar -xf Nordic-darker-v40.tar.xz
 sudo cp -r Nordic-darker-v40 /usr/share/themes
+gsettings set org.gnome.desktop.interface gtk-theme "Nordic-darker-v40"
+gsettings set org.gnome.desktop.wm.preferences theme "Nordic-darker-v40"
