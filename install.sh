@@ -9,7 +9,7 @@ sudo apt full-upgrade -y
 echo "2. Install base desktop environment"
 sudo apt install budgie-desktop -y
 echo "3. Install extra applications"
-sudo apt install tilix lightdm thunar pitivi git preload -y
+sudo apt install tilix lightdm thunar pitivi preload xarchiver -y
 sudo apt install curl -y
 sudo curl -fsSLo /usr/share/keyrings/brave-browser-beta-archive-keyring.gpg https://brave-browser-apt-beta.s3.brave.com/brave-browser-beta-archive-keyring.gpg
 echo "deb [signed-by=/usr/share/keyrings/brave-browser-beta-archive-keyring.gpg] https://brave-browser-apt-beta.s3.brave.com/ stable main"|sudo tee /etc/apt/sources.list.d/brave-browser-beta.list
@@ -30,3 +30,4 @@ tar -xf Nordic-darker-v40.tar.xz
 sudo cp -r Nordic-darker-v40 /usr/share/themes
 gsettings set org.gnome.desktop.interface gtk-theme "Nordic-darker-v40"
 gsettings set org.gnome.desktop.wm.preferences theme "Nordic-darker-v40"
+echo "CrazyDebian is finished installing. Reboot to continue. Thank you for using CrazyDebian!"
