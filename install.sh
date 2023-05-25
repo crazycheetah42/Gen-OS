@@ -30,4 +30,5 @@ tar -xf Nordic-darker-v40.tar.xz
 sudo cp -r Nordic-darker-v40 /usr/share/themes
 gsettings set org.gnome.desktop.interface gtk-theme "Nordic-darker-v40"
 gsettings set org.gnome.desktop.wm.preferences theme "Nordic-darker-v40"
+mv wallpaper.jpg ~/
 echo "CrazyDebian is finished installing. Reboot to continue. Thank you for using CrazyDebian!"
