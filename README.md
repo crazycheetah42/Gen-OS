@@ -16,7 +16,7 @@ sudo ./install.sh
 ```
 
 <h2>After installation</h2>
-After you run the script, press Enter to continue and then you will be able to sit back and relax while Gen OS installs. After Gen OS is installed, reboot your computer to continue. You can either use the "reboot" command, or you can hard reset. Once the login screen appears, select the tool icon on the top right and select Budgie Desktop. This will make sure that the Gen OS desktop (which runs on the Budgie Desktop Environment) is loaded instead of a terminal. Once you're in, right click on the desktop and select Budgie Desktop Settings. Then change the cursors to Nordzy-cursors and the Widgets to Nordic-darker-v40. That's it! Enjoy your new desktop!
+After you run the script, press Enter to continue and then you will be able to sit back and relax while Gen OS installs. After Gen OS is installed, reboot your computer to continue. You can either use the "reboot" command, or you can hard reset. Once the login screen appears, select the tool icon on the top right and select Budgie Desktop. This will make sure that the Gen OS desktop (which runs on the Budgie Desktop Environment) is loaded instead of a terminal. Once you're in, right click on the desktop and select Budgie Desktop Settings. Then change the cursors to Nordzy-cursors and the Widgets to Nordic-darker-v40. There is also an optional background in your home folder which you can apply, if you wish. That's it! Enjoy your new desktop!
 
 
 <h2>Installing apps</h2>
