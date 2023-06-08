@@ -2,7 +2,8 @@ if [[ $EUID -ne 0 ]]; then
   echo "You must be a root user to run this script, please run sudo ./install.sh" 2>&1
   exit 1
 fi
-echo "Welcome to CrazyDebian! This script will install CrazyDebian for you."
+echo "Welcome to the Gen OS installer! Just sit back and relax while Gen OS installs for you."
+read -p "Press Enter to continue..."
 echo "1. Update the system"
 sudo apt update
 sudo apt full-upgrade -y
@@ -32,4 +33,4 @@ sudo cp -r Nordic-darker-v40 /usr/share/themes
 sudo update-alternatives --set gtk-theme /usr/share/themes/Nordic-darker-v40/gtk-3.0/gtk.css
 mkdir -p ~/Pictures
 mv wallpaper.jpg ~/Pictures
-echo "CrazyDebian is finished installing. Reboot to continue. Thank you for using CrazyDebian!"
+echo "Gen OS is finished installing. Please reboot to continue to the login screen. Please make sure to click the tool icon and change it to Budgie Desktop. Thank you for using Gen OS installer!"
