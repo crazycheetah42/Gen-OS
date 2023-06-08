@@ -2,7 +2,7 @@
 This is a script that will install Gen OS.
 
 <h2>Install Gen OS</h2>
-To install this on the computer you want to install Gen OS on, first download the Debian ISO here: <https://cdimage.debian.org/cdimage/weekly-builds/amd64/iso-cd/>. Then create a installation media and install Debian. Make sure not to install a Debian desktop environment or GNOME during installation. You can turn them off with Space and the arrow keys.
+To install this on the computer you want to install Gen OS on, first download the Debian ISO here: <a href="https://cdimage.debian.org/cdimage/weekly-builds/amd64/iso-cd/">https://cdimage.debian.org/cdimage/weekly-builds/amd64/iso-cd/</a>. Then create a installation media and install Debian. Make sure not to install a Debian desktop environment or GNOME during installation. You can turn them off with Space and the arrow keys.
 
 After Debian is installed, login to your system and type the following commands:
 
