@@ -31,6 +31,5 @@ wget https://github.com/EliverLara/Nordic/releases/download/v2.2.0/Nordic-darker
 tar -xf Nordic-darker-v40.tar.xz
 sudo cp -r Nordic-darker-v40 /usr/share/themes
 sudo update-alternatives --set gtk-theme /usr/share/themes/Nordic-darker-v40/gtk-3.0/gtk.css
-mkdir -p ~/Pictures
-mv wallpaper.jpg ~/Pictures
-echo "Gen OS is finished installing. Please reboot to continue to the login screen. Please make sure to click the tool icon and change it to Budgie Desktop. Thank you for using Gen OS installer!"
+mv wallpaper.jpg ../
+echo "Gen OS is finished installing. Please reboot to continue to the login screen. Please make sure to click the tool icon on the top right and change it to Budgie Desktop. Thank you for using Gen OS installer!"
