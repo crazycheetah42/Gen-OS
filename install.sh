@@ -3,7 +3,7 @@ if [[ $EUID -ne 0 ]]; then
   exit 1
 fi
 echo "Welcome to the Gen OS installer! Just sit back and relax while Gen OS installs for you."
-builddir = $(pwd)
+$builddir = $(pwd)
 echo "1. Update the system"
 sudo apt update
 sudo apt full-upgrade -y
