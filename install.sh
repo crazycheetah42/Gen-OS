@@ -3,7 +3,7 @@ if [[ $EUID -ne 0 ]]; then
   exit 1
 fi
 echo "Welcome to the Gen OS installer! Just sit back and relax while Gen OS installs for you."
-read -p "Press Enter to continue..."
+builddir = $(pwd)
 echo "1. Update the system"
 sudo apt update
 sudo apt full-upgrade -y
@@ -21,7 +21,8 @@ echo "5. Install cursors (Nordzy-cursors)"
 git clone https://github.com/alvatip/Nordzy-cursors
 cd Nordzy-cursors
 sudo ./install.sh
-cd ..
+cd $builddir
+sudo rm -rf Nordzy-cursors
 sudo rm -r /usr/share/icons/default/index.theme
 sudo cp index.theme /usr/share/icons/default/
 echo "6. Install icons (papirus)"
@@ -30,5 +31,6 @@ echo "7. Install theme (Nordic-darker-v40)"
 wget https://github.com/EliverLara/Nordic/releases/download/v2.2.0/Nordic-darker-v40.tar.xz
 tar -xf Nordic-darker-v40.tar.xz
 sudo cp -r Nordic-darker-v40 /usr/share/themes
+sudo rm -rf Nordic-darker-v40.tar.xz
 mv wallpaper.jpg ../
 echo "Gen OS is finished installing. Please reboot to continue to the login screen. Please make sure to click the tool icon on the top right and change it to Budgie Desktop. Thank you for using Gen OS installer!"
