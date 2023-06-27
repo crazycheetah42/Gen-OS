@@ -11,12 +11,13 @@ echo "2. Install base desktop environment"
 sudo apt install budgie-desktop -y
 echo "3. Install extra packages"
 sudo apt install tilix lightdm thunar preload -y
-echo "4. Install browser (Brave Browser)"
+echo "4. Install browser (Microsoft Edge)"
 sudo apt install apt-transport-https curl -y
-sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
-echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main"|sudo tee /etc/apt/sources.list.d/brave-browser-release.list
-sudo apt update
-sudo apt install brave-browser -y
+curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
+sudo install -o root -g root -m 644 microsoft.gpg /etc/apt/trusted.gpg.d/
+sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/edge stable main" > /etc/apt/sources.list.d/microsoft-edge-dev.list'
+sudo rm microsoft.gpg
+sudo apt update && sudo apt install microsoft-edge-stable -y
 echo "5. Install cursors (Nordzy-cursors)"
 git clone https://github.com/alvatip/Nordzy-cursors
 cd Nordzy-cursors
