@@ -25,4 +25,3 @@ If you want to install apps, you can use a package manager like apt. If you woul
 ```
 sudo apt install gnome-software -y
 ```
-And then you will be able to install more packages on your system. Thank you for choosing Gen OS!
