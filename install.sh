@@ -26,8 +26,7 @@ sudo rm -rf Nordic-darker-v40.tar.xz
 echo "Install a browser"
 install_firefox() {
     echo "Installing Firefox..."
-    sudo apt update
-    sudo apt install -y firefox
+    sudo apt install firefox -y
 }
 install_google_chrome() {
     echo "Installing Google Chrome..."
@@ -37,11 +36,11 @@ install_google_chrome() {
 }
 install_brave_browser() {
     echo "Installing Brave browser..."
-    sudo apt install -y apt-transport-https curl
+    sudo apt install apt-transport-https curl -y
     curl -s https://brave-browser-apt-release.s3.brave.com/brave-core.asc | sudo apt-key --keyring /etc/apt/trusted.gpg.d/brave-browser-release.gpg add -
     echo "deb [arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main" | sudo tee /etc/apt/sources.list.d/brave-browser-release.list
     sudo apt update
-    sudo apt install -y brave-browser
+    sudo apt install brave-browser -y
 }
 echo "Which browser would you like to install?"
 echo "1. Firefox"
